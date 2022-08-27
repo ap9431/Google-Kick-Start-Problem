@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int T;
+    cin>>T;
+    for(int i=1;i<=T;i++){
+        int N,M,k,sum=0;
+        vector<int> v;
+        cin>>N>>M;
+        for(int i=0;i<N;i++){
+            cin>>k;
+            v.push_back(k);
+        }
+        
+        for(int i=0;i<N;i++){
+            sum+=v[i];
+        }
+         cout<<"Case #"<<i<<": "<<sum%M<<endl;
+    }
+}
